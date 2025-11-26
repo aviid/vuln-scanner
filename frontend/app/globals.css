@@ -1,0 +1,108 @@
+:root {
+  --primary-color: #8855c7;
+  --secondary-color: #3498db;
+  --danger-color: #e74c3c;
+  --warning-color: #f39c12;
+  --success-color: #27ae60;
+}
+body{
+  background-color: #121212;
+}
+
+h1{
+  color: #8955c8;
+}
+.vulnerability-card {
+  border-left: 4px solid var(--danger-color);
+  transition: all 0.3s ease;
+  
+}
+
+.vulnerability-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.severity-high {
+  border-left-color: var(--danger-color);
+}
+
+.severity-medium {
+  border-left-color: var(--warning-color);
+}
+
+.severity-low {
+  border-left-color: var(--secondary-color);
+}
+
+.scan-results {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.upload-card{
+  background-color: #1e1e1e;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5),
+                0 8px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    border: 1px solid #1e1e1e;;
+  color: #fff;
+}
+
+.upload-area {
+  border: 2px dashed #dee2e6;
+  color: #dee2e6;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.upload-area.dragover {
+  border-color: var(--secondary-color);
+  background-color: rgba(52, 152, 219, 0.1);
+  color: #dee2e6;
+}
+
+.badge {
+  font-size: 0.75em;
+}
+
+.text-muted{
+  color: #74658a !important;
+}
+
+/* Bootstrap Icons CDN fallback */
+.bi::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.btn{
+  background-color: #8955c8;
+  border-color: #9e64e6;
+  color: #fff;
+}
+.btn:hover{
+  background-color: #9e64e6;
+  border-color: #9e64e6;
+}
+
+.btn:disabled{
+  background-color: #937fac;
+  border-color: #937fac;
+}
+
+.bi-cloud-arrow-up::before {
+  content: "📁";
+}
+
+.bi-download::before {
+  content: "📥";
+}
+
+.bi-shield-check::before {
+  content: "✅";
+}
